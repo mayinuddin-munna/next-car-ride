@@ -49,7 +49,7 @@ const Login = () => {
               <div className="text-center mt-5">
                 Don't have an account please{" "}
                 <Link href="/register" className="underline text-sm">
-                  Sign Up
+                  Register
                 </Link>
               </div>
             </form>
