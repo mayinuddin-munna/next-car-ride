@@ -15,7 +15,7 @@ const Register = () => {
       email: data.email,
       password: data.password,
     };
-    
+
     if (!data.username || !data.email || !data.password) {
       setError("Must be provide all credential.");
     }
@@ -32,12 +32,13 @@ const Register = () => {
       if (res.ok) {
         setLoading(false);
         reset();
+        console.log("Uer registered");
       } else {
         console.log("Something Went wrong!");
         setLoading(false);
       }
     } catch (error) {
-      console.log("Something was wrong!");
+      console.log("Something was wrong!", error);
     }
   };
 
