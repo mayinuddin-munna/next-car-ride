@@ -12,7 +12,7 @@ const Register = () => {
 
   const handleSignUp = async (data) => {
     const userData = {
-      name: data.username,
+      username: data.username,
       email: data.email,
       password: data.password,
     };
@@ -64,7 +64,7 @@ const Register = () => {
                     name="username"
                     placeholder="User Name"
                     className="w-full bg-white rounded border border-gray-300 focus:border-[#251546] focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-3 px-6 leading-8 transition-colors duration-200 ease-in-out"
-                    {...register("username", { require: true })}
+                    {...register("username")}
                   />
                 </div>
                 <div className="relative mb-4">

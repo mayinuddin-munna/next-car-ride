@@ -4,7 +4,7 @@ const UserSchema = mongoose.Schema(
   {
     username: {
       type: String,
-      required: false,
+      required: true,
     },
     email: {
       type: String,
@@ -14,13 +14,13 @@ const UserSchema = mongoose.Schema(
     password: {
       type: String,
       required: true,
-      // validate: {
-      //   validator: function (value) {
-      //     return /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).+$/.test(value);
-      //   },
-      //   message:
-      //     "Password must contain at least one lowercase, one uppercase, and one digit",
-      // },
+      validate: {
+        validator: function (value) {
+          return /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).+$/.test(value);
+        },
+        message:
+          "Password must contain at least one lowercase, one uppercase, and one digit",
+      },
     },
     profilePicture: {
       type: String,
@@ -39,7 +39,7 @@ const UserSchema = mongoose.Schema(
     },
   },
   {
-    timestamp: true,
+    timestamps: true,
   }
 );
 
