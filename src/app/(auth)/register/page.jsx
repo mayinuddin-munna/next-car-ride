@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+import tempImage from'../../../../public/assets/images/Temp.png'
 
 const Register = () => {
   const { register, handleSubmit, reset } = useForm();
@@ -15,6 +16,8 @@ const Register = () => {
       email: data.email,
       password: data.password,
     };
+
+    console.log(userData);
 
     if (!data.username || !data.email || !data.password) {
       setError("Must be provide all credential.");
@@ -107,8 +110,8 @@ const Register = () => {
         </div>
       </div>
       <div className="md:w-1/2 md:pr-12 md:py-8 md:border-r md:border-b-0 mb-10 md:mb-0 pb-10 border-b border-gray-200">
-        <img
-          src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp"
+        <Image
+          src={tempImage}
           alt="..."
         />
       </div>

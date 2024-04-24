@@ -1,14 +1,14 @@
-"use client"
+"use client";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { useForm } from "react-hook-form";
+import tempImage from'../../../../public/assets/images/Temp.png'
 
 const Login = () => {
   const { register, handleSubmit } = useForm();
 
-  const handleSignedIn = async (data) => {
-    
-  };
+  const handleSignedIn = async (data) => {};
 
   return (
     <div className="flex-row-reverse container flex-wrap px-5 py-24 mx-auto flex items-center justify-center">
@@ -21,14 +21,14 @@ const Login = () => {
             >
               <div className="relative mb-4">
                 <label className="leading-7 text-sm text-gray-600">
-                  Phone Number
+                  Email Address
                 </label>
                 <input
-                  type="text"
-                  name="phone"
-                  placeholder="Phone Number"
+                  type="email"
+                  name="email"
+                  placeholder="Email Address"
                   className="w-full bg-white rounded border border-gray-300 focus:border-[#251546] focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-3 px-6 leading-8 transition-colors duration-200 ease-in-out;"
-                  {...register("phone")}
+                  {...register("email")}
                 />
               </div>
               <div className="relative mb-4">
@@ -43,11 +43,14 @@ const Login = () => {
                   {...register("password")}
                 />
               </div>
-              <button type="submit" className="text-white uppercase bg-[#222] border-0 py-3 px-6 mt-4 focus:outline-none hover:bg-[#251546] text-lg">
+              <button
+                type="submit"
+                className="text-white uppercase bg-[#222] border-0 py-3 px-6 mt-4 focus:outline-none hover:bg-[#251546] text-lg"
+              >
                 Sign In
               </button>
               <div className="text-center mt-5">
-                Don't have an account please{" "}
+                Don t have an account please{" "}
                 <Link href="/register" className="underline text-sm">
                   Register
                 </Link>
@@ -57,8 +60,8 @@ const Login = () => {
         </div>
       </div>
       <div className="md:w-1/2 md:pr-12 md:py-8 md:border-r md:border-b-0 mb-10 md:mb-0 pb-10 border-b border-gray-200">
-        <img
-          src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp"
+        <Image
+          src={tempImage}
           alt="..."
         />
       </div>

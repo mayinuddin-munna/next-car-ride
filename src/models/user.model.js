@@ -2,9 +2,9 @@ import mongoose from "mongoose";
 
 const UserSchema = mongoose.Schema(
   {
-    name: {
+    username: {
       type: String,
-      required: true,
+      required: false,
     },
     email: {
       type: String,
@@ -14,14 +14,13 @@ const UserSchema = mongoose.Schema(
     password: {
       type: String,
       required: true,
-      validate: {
-        validator: function (value) {
-          // Example: Ensure password has at least one lowercase, one uppercase, and one digit
-          return /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).+$/.test(value);
-        },
-        message:
-          "Password must contain at least one lowercase, one uppercase, and one digit",
-      },
+      // validate: {
+      //   validator: function (value) {
+      //     return /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).+$/.test(value);
+      //   },
+      //   message:
+      //     "Password must contain at least one lowercase, one uppercase, and one digit",
+      // },
     },
     profilePicture: {
       type: String,
