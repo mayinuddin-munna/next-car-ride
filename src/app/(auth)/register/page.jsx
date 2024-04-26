@@ -17,7 +17,7 @@ const Register = () => {
       password: data.password,
     };
 
-    console.log(userData);
+    // console.log(userData);
 
     if (!data.username || !data.email || !data.password) {
       setError("Must be provide all credential.");

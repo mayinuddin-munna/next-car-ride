@@ -8,7 +8,7 @@ export async function POST(req) {
     await ConnectDB();
     const { username, email, password } = await req.json();
 
-    console.log({ username, email, password });
+    // console.log({ username, email, password });
 
     const existingUser = await User.findOne({ email });
 
