@@ -19,7 +19,7 @@ const Map = () => {
   console.log(process.env.GOOGLE_API_KEY);
 
   return (
-    <LoadScript googleMapsApiKey={process.env.GOOGLE_API_KEY}>
+    <LoadScript googleMapsApiKey='AIzaSyC6Y7yBe9JX9V40iCq_4GhFH0SlyrwtlM4'>
       <GoogleMap mapContainerStyle={containerStyle} center={location} zoom={10}>
         <Marker onLoad={onLoad} position={location} />
       </GoogleMap>
