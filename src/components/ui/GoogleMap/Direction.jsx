@@ -21,20 +21,17 @@ const Direction = () => {
     lng: 90.4152,
   };
 
-  const onLoad = () => {};
-
   //   console.log(process.env.GOOGLE_API_KEY);
   const [directionRes, setDirectionRes] = useState(null);
 
   return (
     <LoadScript googleMapsApiKey="AIzaSyC6Y7yBe9JX9V40iCq_4GhFH0SlyrwtlM4">
       <GoogleMap mapContainerStyle={containerStyle} center={location} zoom={10}>
-        {/* <Marker onLoad={onLoad} position={location} /> */}
         <DirectionsService
           options={{
-            destination: "United hospital Dhaka Bangladesh",
-            origin: "Mirpur 1 circle Dhaka Bangladesh",
-            travelMode: "Driving",
+            // destination: "United hospital Dhaka Bangladesh",
+            // origin: "Mirpur 1 circle Dhaka Bangladesh",
+            travelMode: "DRIVING",
           }}
           callback={(res) => {
             if (res !== null) {

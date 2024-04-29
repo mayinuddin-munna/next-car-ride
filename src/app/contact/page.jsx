@@ -5,8 +5,8 @@ import React from "react";
 const Contact = () => {
   return (
     <div>
-      {/* <Map /> */}
-      <Direction/>
+      <Map />
+      {/* <Direction/> */}
     </div>
   );
 };

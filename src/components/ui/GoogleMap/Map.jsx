@@ -16,7 +16,7 @@ const Map = () => {
 
   const onLoad = () => {};
 
-  console.log(process.env.GOOGLE_API_KEY);
+  // console.log(process.env.GOOGLE_API_KEY);
 
   return (
     <LoadScript googleMapsApiKey='AIzaSyC6Y7yBe9JX9V40iCq_4GhFH0SlyrwtlM4'>
