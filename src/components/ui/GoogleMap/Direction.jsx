@@ -10,7 +10,8 @@ import {
 import { BeakerIcon } from "@heroicons/react/24/solid";
 import { useState } from "react";
 
-const Direction = () => {
+const Direction = ({ destination, origin }) => {
+  // console.log(destination, origin);
   const containerStyle = {
     width: "100%",
     height: "600px",
@@ -28,8 +29,8 @@ const Direction = () => {
       <GoogleMap mapContainerStyle={containerStyle} center={location} zoom={10}>
         <DirectionsService
           options={{
-            // destination: "United hospital Dhaka Bangladesh",
-            // origin: "Mirpur 1 circle Dhaka Bangladesh",
+            destination,
+            origin,
             travelMode: "DRIVING",
           }}
           callback={(res) => {
