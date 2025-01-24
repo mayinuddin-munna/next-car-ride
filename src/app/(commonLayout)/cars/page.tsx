@@ -1,11 +1,12 @@
-import React from 'react';
+"use client";
+import React from "react";
 
 const Cars = () => {
-    return (
-        <div>
-            Cars
-        </div>
-    );
+  return (
+    <div>
+      <h1>Cars</h1>
+    </div>
+  );
 };
 
 export default Cars;
