@@ -1,5 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
+import Providers from "./lib/Providers";
 
 export const metadata: Metadata = {
   title: "Apollo Gears",
@@ -14,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`antialiased`}>
-        {children}
+        <Providers>{children}</Providers>
         Footer
       </body>
     </html>

@@ -1,9 +1,10 @@
+import { Button } from '@heroui/button';
 import React from 'react';
 
 const Home = () => {
     return (
         <div>
-            Welcome!
+             <Button>Press me</Button>
         </div>
     );
 };
