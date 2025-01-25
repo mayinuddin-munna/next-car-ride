@@ -11,12 +11,15 @@ const CarsDetails = async ({
   searchParams: SearchParams;
 }) => {
   const { slug } = await params;
+  const { search } = await searchParams;
 
   console.log({ searchParams });
 
   return (
     <div>
-      <h1>CarsDetails {slug} {searchParams.search}</h1>
+      <h1>
+        CarsDetails {slug} {search}
+      </h1>
     </div>
   );
 };

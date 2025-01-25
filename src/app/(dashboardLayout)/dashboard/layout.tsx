@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Dashboard | Apollo Gears",
+  title: "User Sidebar | Apollo Gears",
   description: "Next Level Riding Sharing Service",
 };
 
@@ -12,7 +12,7 @@ export default function DashboardLayout({
 }>) {
   return (
     <div>
-      Dashboard Navbar
+      User Sidebar
       {children}
     </div>
   );
