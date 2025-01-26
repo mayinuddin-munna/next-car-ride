@@ -1,12 +1,12 @@
-import { Button } from '@heroui/button';
-import React from 'react';
+import React from "react";
+import Banner from "./components/pages/Home/Banner";
 
 const Home = () => {
-    return (
-        <div>
-             <Button>Press me</Button>
-        </div>
-    );
+  return (
+    <div>
+      <Banner />
+    </div>
+  );
 };
 
 export default Home;
