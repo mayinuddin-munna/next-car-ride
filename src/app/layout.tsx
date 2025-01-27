@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import Providers from "./lib/Providers";
+import Footer from "./(commonLayout)/components/pages/Shared/Footer";
 
 export const metadata: Metadata = {
   title: "Apollo Gears",
@@ -18,7 +19,7 @@ export default function RootLayout({
         <Providers>
           <div className="mx-auto container">{children}</div>
         </Providers>
-        Footer
+        <Footer />
       </body>
     </html>
   );

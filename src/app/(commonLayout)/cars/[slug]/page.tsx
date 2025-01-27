@@ -13,12 +13,20 @@ const CarsDetails = async ({
   const { slug } = await params;
   const { search } = await searchParams;
 
-  console.log({ searchParams });
+  const res = await fetch(`http://localhost:5000/api/v1/cars/${params.slug}`, {
+    next: {},
+    cache: "no-store",
+  });
+
+  const posts = await res.json();
+
+  console.log(posts);
+  
 
   return (
     <div>
       <h1>
-        CarsDetails {slug} {search}
+        CarsDetails {posts?.data?.name}
       </h1>
     </div>
   );
