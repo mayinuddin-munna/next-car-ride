@@ -16,7 +16,10 @@ export async function middleware(request: NextRequest) {
       return NextResponse.next();
     } else {
       return NextResponse.redirect(
-        new URL(pathname ? `/login?redirect=${pathname}` : "/login", request.url)
+        new URL(
+          pathname ? `/login?redirect=${pathname}` : "/login",
+          request.url
+        )
       );
     }
   }
@@ -28,19 +31,22 @@ export async function middleware(request: NextRequest) {
   const role = decodedToken?.role;
   // console.log({ role });
 
-  if (role === "admin" && pathname === "/admin-dashboard") {
+  if (role === "admin" && pathname.match(/^\/admin-dashboard/)) {
     return NextResponse.next();
   }
 
-  if (role === "driver" && pathname === "/driver-dashboard") {
+  if (role === "driver" && pathname.match(/^\/driver-dashboard/)) {
     return NextResponse.next();
   }
 
-  if (role === "user" && pathname === "/dashboard") {
+  if (role === "user" && pathname.match(/^\/dashboard/)) {
     return NextResponse.next();
-  } else {
-    return NextResponse.redirect(new URL("/", request.url));
   }
+  
+  if (role === "user" && pathname === "/profile") {
+    return NextResponse.next();
+  }
+  return NextResponse.redirect(new URL("/", request.url));
 }
 
 export const config = {
