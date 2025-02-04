@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { UserLayout } from "./layout/userLayout";
 
 export const metadata: Metadata = {
   title: "User Sidebar | Apollo Gears",
@@ -12,8 +13,7 @@ export default function DashboardLayout({
 }>) {
   return (
     <div>
-      User Sidebar
-      {children}
+      <UserLayout>{children}</UserLayout>
     </div>
   );
 }
