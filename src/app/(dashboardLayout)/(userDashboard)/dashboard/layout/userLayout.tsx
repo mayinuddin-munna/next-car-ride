@@ -1,9 +1,6 @@
 "use client";
-
-import { SidebarWrapper } from "../../components/sidebar/userSidebar";
-
-// import { NavbarWrapper } from "@/app/(dashboardLayout)/components/dashboardNabbar/dashboardNavbar";
-// import { SidebarWrapper } from "@/app/(dashboardLayout)/components/sidebar/sidebar.styles";
+import { SidebarWrapper } from "../../../components/sidebar/userSidebar";
+import { NavbarWrapper } from "../../../components/dashboardNavbar/dashboardNavbar";
 
 interface Props {
   children: React.ReactNode;
@@ -12,11 +9,8 @@ interface Props {
 export const UserLayout = ({ children }: Props) => {
   return (
     <section className="flex">
-      <SidebarWrapper></SidebarWrapper>
-
-      {/* <NavbarWrapper>{children}</NavbarWrapper> */}
-
-      {children}
+      <SidebarWrapper />
+      <NavbarWrapper>{children}</NavbarWrapper>
     </section>
   );
 };

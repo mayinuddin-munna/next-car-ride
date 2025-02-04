@@ -122,7 +122,19 @@
     "@react-types/overlays" "3.8.11"
     "@react-types/shared" "3.26.0"
 
-"@heroui/button@^2.2.10":
+"@heroui/avatar@^2.2.7":
+  version "2.2.7"
+  resolved "https://registry.npmjs.org/@heroui/avatar/-/avatar-2.2.7.tgz"
+  integrity sha512-ygQhdpyotejCbGaqBSadEXMulrpWLEl7lgV/0zKr17PVNPcDMt6otcBIrfiirrnGQoBi7rAJg0QS2IlHA/3mVQ==
+  dependencies:
+    "@heroui/react-utils" "2.1.4"
+    "@heroui/shared-utils" "2.1.3"
+    "@heroui/use-image" "2.1.3"
+    "@react-aria/focus" "3.19.0"
+    "@react-aria/interactions" "3.22.5"
+    "@react-aria/utils" "3.26.0"
+
+"@heroui/button@^2.2.10", "@heroui/button@2.2.10":
   version "2.2.10"
   resolved "https://registry.npmjs.org/@heroui/button/-/button-2.2.10.tgz"
   integrity sha512-SsW7t1Ay6SKQtUuwy0RXKmHR43RLHUd0ef9efJrcLAhm7HT6vkwAPQxYV2IMbXJMNDSezjbY+rcUFk3VOE0qqg==
@@ -169,6 +181,36 @@
   resolved "https://registry.npmjs.org/@heroui/dom-animation/-/dom-animation-2.1.2.tgz"
   integrity sha512-DX5zGe60gjKIk1sYMPGgR4shOsfpL/1xH0EN18o0SyBiJuGtrii2nXW+0sbsapsW6KzqVYMmXzfVhWkAWR190Q==
 
+"@heroui/dropdown@^2.3.10":
+  version "2.3.10"
+  resolved "https://registry.npmjs.org/@heroui/dropdown/-/dropdown-2.3.10.tgz"
+  integrity sha512-T2W5RjInzjU2yiksiYc19Wt0QNU5GUtoiYvT3lrYtRUdOTeWgQ19/Q3zLSxDXaZkf5fYFC0KqaJ52cvJApmNPw==
+  dependencies:
+    "@heroui/aria-utils" "2.2.8"
+    "@heroui/menu" "2.2.10"
+    "@heroui/popover" "2.3.10"
+    "@heroui/react-utils" "2.1.4"
+    "@heroui/shared-utils" "2.1.3"
+    "@react-aria/focus" "3.19.0"
+    "@react-aria/menu" "3.16.0"
+    "@react-aria/utils" "3.26.0"
+    "@react-stately/menu" "3.9.0"
+    "@react-types/menu" "3.9.13"
+
+"@heroui/form@2.1.9":
+  version "2.1.9"
+  resolved "https://registry.npmjs.org/@heroui/form/-/form-2.1.9.tgz"
+  integrity sha512-8qqfWXmVeELDN2JJ45+71tgNil8ird7LkF6chkK/+SLw3OTTE1q7dq9ikc6zzQ12x0Sa7IgVDl4bVn4jHoDCyA==
+  dependencies:
+    "@heroui/react-utils" "2.1.4"
+    "@heroui/shared-utils" "2.1.3"
+    "@heroui/system" "2.4.7"
+    "@heroui/theme" "2.4.6"
+    "@react-aria/utils" "3.26.0"
+    "@react-stately/form" "3.1.0"
+    "@react-types/form" "3.7.8"
+    "@react-types/shared" "3.26.0"
+
 "@heroui/framer-utils@2.1.7":
   version "2.1.7"
   resolved "https://registry.npmjs.org/@heroui/framer-utils/-/framer-utils-2.1.7.tgz"
@@ -177,6 +219,85 @@
     "@heroui/shared-utils" "2.1.3"
     "@heroui/system" "2.4.7"
     "@heroui/use-measure" "2.1.2"
+
+"@heroui/input@^2.4.10":
+  version "2.4.10"
+  resolved "https://registry.npmjs.org/@heroui/input/-/input-2.4.10.tgz"
+  integrity sha512-cHKgDiNq6ppe71epBqpiaHxH8CbIZ9uPTvzSEgSsYaDhI6vos7fNAUkpLwQyp8yAPOQBHO4RHSYDKYTOhyGsIg==
+  dependencies:
+    "@heroui/form" "2.1.9"
+    "@heroui/react-utils" "2.1.4"
+    "@heroui/shared-icons" "2.1.2"
+    "@heroui/shared-utils" "2.1.3"
+    "@heroui/use-safe-layout-effect" "2.1.2"
+    "@react-aria/focus" "3.19.0"
+    "@react-aria/interactions" "3.22.5"
+    "@react-aria/textfield" "3.15.0"
+    "@react-aria/utils" "3.26.0"
+    "@react-stately/utils" "3.10.5"
+    "@react-types/shared" "3.26.0"
+    "@react-types/textfield" "3.10.0"
+    react-textarea-autosize "^8.5.3"
+
+"@heroui/listbox@2.3.10":
+  version "2.3.10"
+  resolved "https://registry.npmjs.org/@heroui/listbox/-/listbox-2.3.10.tgz"
+  integrity sha512-UuGQeGwqOj0v5ibLKd0xvoJ8ZfqvjCQFAAvyy1tERbI7ERGnL8upN+dOdRkwn+rnSYs1CmnFsvK8fNlcGalQQQ==
+  dependencies:
+    "@heroui/aria-utils" "2.2.8"
+    "@heroui/divider" "2.2.6"
+    "@heroui/react-utils" "2.1.4"
+    "@heroui/shared-utils" "2.1.3"
+    "@heroui/use-is-mobile" "2.2.3"
+    "@react-aria/focus" "3.19.0"
+    "@react-aria/interactions" "3.22.5"
+    "@react-aria/listbox" "3.13.6"
+    "@react-aria/utils" "3.26.0"
+    "@react-stately/list" "3.11.1"
+    "@react-types/menu" "3.9.13"
+    "@react-types/shared" "3.26.0"
+    "@tanstack/react-virtual" "3.11.2"
+
+"@heroui/menu@2.2.10":
+  version "2.2.10"
+  resolved "https://registry.npmjs.org/@heroui/menu/-/menu-2.2.10.tgz"
+  integrity sha512-gfiD/E56Xxn1UshnuyBcM+MxJcLUDcSGL1sxoMC5IbNVOdKhdoK4d9eBEEfgTgV+qer83KrMG+yFyBiOjA7nXw==
+  dependencies:
+    "@heroui/aria-utils" "2.2.8"
+    "@heroui/divider" "2.2.6"
+    "@heroui/react-utils" "2.1.4"
+    "@heroui/shared-utils" "2.1.3"
+    "@heroui/use-is-mobile" "2.2.3"
+    "@react-aria/focus" "3.19.0"
+    "@react-aria/interactions" "3.22.5"
+    "@react-aria/menu" "3.16.0"
+    "@react-aria/utils" "3.26.0"
+    "@react-stately/menu" "3.9.0"
+    "@react-stately/tree" "3.8.6"
+    "@react-types/menu" "3.9.13"
+    "@react-types/shared" "3.26.0"
+
+"@heroui/modal@^2.2.8":
+  version "2.2.8"
+  resolved "https://registry.npmjs.org/@heroui/modal/-/modal-2.2.8.tgz"
+  integrity sha512-HT2ZYYrkWrrxIR4A/ARppsHVWI1ZhAWfNGU5LQ3BGqvmgTyrbsiRHdDKr9E+sxbCKXFHTxwTKzPAGKoNscVecA==
+  dependencies:
+    "@heroui/dom-animation" "2.1.2"
+    "@heroui/framer-utils" "2.1.7"
+    "@heroui/react-utils" "2.1.4"
+    "@heroui/shared-icons" "2.1.2"
+    "@heroui/shared-utils" "2.1.3"
+    "@heroui/use-aria-button" "2.2.5"
+    "@heroui/use-aria-modal-overlay" "2.2.4"
+    "@heroui/use-disclosure" "2.2.3"
+    "@heroui/use-draggable" "2.1.3"
+    "@react-aria/dialog" "3.5.20"
+    "@react-aria/focus" "3.19.0"
+    "@react-aria/interactions" "3.22.5"
+    "@react-aria/overlays" "3.24.0"
+    "@react-aria/utils" "3.26.0"
+    "@react-stately/overlays" "3.6.12"
+    "@react-types/overlays" "3.8.11"
 
 "@heroui/navbar@^2.2.9":
   version "2.2.9"
@@ -195,6 +316,28 @@
     "@react-aria/utils" "3.26.0"
     "@react-stately/toggle" "3.8.0"
     "@react-stately/utils" "3.10.5"
+
+"@heroui/popover@2.3.10":
+  version "2.3.10"
+  resolved "https://registry.npmjs.org/@heroui/popover/-/popover-2.3.10.tgz"
+  integrity sha512-qswvCUxkHGWbXuBQYDl5yCeqyzAgYXTXsPzc95KPVy+QoVFFQaHvvRkgjqK1rfJOZcH6cJpyO45eT3tJi3M/IQ==
+  dependencies:
+    "@heroui/aria-utils" "2.2.8"
+    "@heroui/button" "2.2.10"
+    "@heroui/dom-animation" "2.1.2"
+    "@heroui/framer-utils" "2.1.7"
+    "@heroui/react-utils" "2.1.4"
+    "@heroui/shared-utils" "2.1.3"
+    "@heroui/use-aria-button" "2.2.5"
+    "@heroui/use-safe-layout-effect" "2.1.2"
+    "@react-aria/dialog" "3.5.20"
+    "@react-aria/focus" "3.19.0"
+    "@react-aria/interactions" "3.22.5"
+    "@react-aria/overlays" "3.24.0"
+    "@react-aria/utils" "3.26.0"
+    "@react-stately/overlays" "3.6.12"
+    "@react-types/button" "3.10.1"
+    "@react-types/overlays" "3.8.11"
 
 "@heroui/react-rsc-utils@2.1.2":
   version "2.1.2"
@@ -218,6 +361,40 @@
     "@heroui/react-utils" "2.1.4"
     "@heroui/shared-utils" "2.1.3"
 
+"@heroui/scroll-shadow@2.3.6":
+  version "2.3.6"
+  resolved "https://registry.npmjs.org/@heroui/scroll-shadow/-/scroll-shadow-2.3.6.tgz"
+  integrity sha512-n1OxJO8ZrjQHoV5XcAAwmeCGGAw2tHd5BJZXHFb0KH9MbwheFTwudlqlSdLdMV8+kVdaPPZmQTXgebzp1sxaKw==
+  dependencies:
+    "@heroui/react-utils" "2.1.4"
+    "@heroui/shared-utils" "2.1.3"
+    "@heroui/use-data-scroll-overflow" "2.2.3"
+
+"@heroui/select@^2.4.10":
+  version "2.4.10"
+  resolved "https://registry.npmjs.org/@heroui/select/-/select-2.4.10.tgz"
+  integrity sha512-mMxW44Ztkg6oL9DUv327Rm8loG00kjGoTGvlgDxpxGdBJRqEYvLz+r0xBVyyyQdtr9DGJoOSmDHN7IjQpjGwnA==
+  dependencies:
+    "@heroui/aria-utils" "2.2.8"
+    "@heroui/form" "2.1.9"
+    "@heroui/listbox" "2.3.10"
+    "@heroui/popover" "2.3.10"
+    "@heroui/react-utils" "2.1.4"
+    "@heroui/scroll-shadow" "2.3.6"
+    "@heroui/shared-icons" "2.1.2"
+    "@heroui/shared-utils" "2.1.3"
+    "@heroui/spinner" "2.2.7"
+    "@heroui/use-aria-button" "2.2.5"
+    "@heroui/use-aria-multiselect" "2.4.4"
+    "@heroui/use-safe-layout-effect" "2.1.2"
+    "@react-aria/focus" "3.19.0"
+    "@react-aria/form" "3.0.11"
+    "@react-aria/interactions" "3.22.5"
+    "@react-aria/utils" "3.26.0"
+    "@react-aria/visually-hidden" "3.8.18"
+    "@react-types/shared" "3.26.0"
+    "@tanstack/react-virtual" "3.11.2"
+
 "@heroui/shared-icons@2.1.2":
   version "2.1.2"
   resolved "https://registry.npmjs.org/@heroui/shared-icons/-/shared-icons-2.1.2.tgz"
@@ -228,7 +405,7 @@
   resolved "https://registry.npmjs.org/@heroui/shared-utils/-/shared-utils-2.1.3.tgz"
   integrity sha512-MNpo+jcu6xyicSRyxWgL4rNw4xH0XziUR/bhs01GydlGhfFN8n/Y4vKAWfL5xamehiEJX1N0IKAbFadt3wlGAA==
 
-"@heroui/spinner@2.2.7":
+"@heroui/spinner@^2.2.7", "@heroui/spinner@2.2.7":
   version "2.2.7"
   resolved "https://registry.npmjs.org/@heroui/spinner/-/spinner-2.2.7.tgz"
   integrity sha512-mMah9randdSFwyEtte6Ov1rkInGJZNBKfsruhDc0bOmMmFH8RNWJLuOyIMsaaKBXZQDwvRNH+3YTezAWAqKnpg==
@@ -275,7 +452,7 @@
     "@react-stately/utils" "3.10.5"
     "@react-types/datepicker" "3.9.0"
 
-"@heroui/theme@^2.4.6", "@heroui/theme@>=2.4.0", "@heroui/theme@>=2.4.3":
+"@heroui/theme@^2.4.6", "@heroui/theme@>=2.4.0", "@heroui/theme@>=2.4.3", "@heroui/theme@2.4.6":
   version "2.4.6"
   resolved "https://registry.npmjs.org/@heroui/theme/-/theme-2.4.6.tgz"
   integrity sha512-VcmeMRxL3wnKk1o6gzeQehEcXyoKyvqLYr+iRFIrMZZO1kG5bvuX+CWDVovfmLRLK1MuwuhYjm6aJvre9AZAfA==
@@ -288,6 +465,25 @@
     flat "^5.0.2"
     tailwind-merge "^2.5.2"
     tailwind-variants "^0.1.20"
+
+"@heroui/tooltip@^2.2.8":
+  version "2.2.8"
+  resolved "https://registry.npmjs.org/@heroui/tooltip/-/tooltip-2.2.8.tgz"
+  integrity sha512-rvG8KsLfxHjtC6iKYq8TY9zVo+q5TjDDws1/8uaw/reJAK5x1RvjDr5kMhT2e32eZws/IuZ4Jl3ta0PASpsIOA==
+  dependencies:
+    "@heroui/aria-utils" "2.2.8"
+    "@heroui/dom-animation" "2.1.2"
+    "@heroui/framer-utils" "2.1.7"
+    "@heroui/react-utils" "2.1.4"
+    "@heroui/shared-utils" "2.1.3"
+    "@heroui/use-safe-layout-effect" "2.1.2"
+    "@react-aria/interactions" "3.22.5"
+    "@react-aria/overlays" "3.24.0"
+    "@react-aria/tooltip" "3.7.10"
+    "@react-aria/utils" "3.26.0"
+    "@react-stately/tooltip" "3.5.0"
+    "@react-types/overlays" "3.8.11"
+    "@react-types/tooltip" "3.4.13"
 
 "@heroui/use-aria-accordion@2.2.3":
   version "2.2.3"
@@ -313,6 +509,81 @@
     "@react-aria/utils" "3.26.0"
     "@react-types/button" "3.10.1"
     "@react-types/shared" "3.26.0"
+
+"@heroui/use-aria-modal-overlay@2.2.4":
+  version "2.2.4"
+  resolved "https://registry.npmjs.org/@heroui/use-aria-modal-overlay/-/use-aria-modal-overlay-2.2.4.tgz"
+  integrity sha512-cZnNbdyjo9NSfJZO0Q+NMAe9ZN8PW2gC5Pgm1GfksjbkMHaf6apnIbwU14mFcI0bdKeTw9Bp+9PkWiTfmBRl0w==
+  dependencies:
+    "@react-aria/overlays" "3.24.0"
+    "@react-aria/utils" "3.26.0"
+    "@react-stately/overlays" "3.6.12"
+    "@react-types/shared" "3.26.0"
+
+"@heroui/use-aria-multiselect@2.4.4":
+  version "2.4.4"
+  resolved "https://registry.npmjs.org/@heroui/use-aria-multiselect/-/use-aria-multiselect-2.4.4.tgz"
+  integrity sha512-ZMRX4bbj9jHMdOi9IQWzaAE9vdLfxr8r9Zew87neDymrCFbvKnBcvag8lMNeTBBvZNAggIMzyTAXbOZWxUkwhw==
+  dependencies:
+    "@react-aria/i18n" "3.12.4"
+    "@react-aria/interactions" "3.22.5"
+    "@react-aria/label" "3.7.13"
+    "@react-aria/listbox" "3.13.6"
+    "@react-aria/menu" "3.16.0"
+    "@react-aria/selection" "3.21.0"
+    "@react-aria/utils" "3.26.0"
+    "@react-stately/form" "3.1.0"
+    "@react-stately/list" "3.11.1"
+    "@react-stately/menu" "3.9.0"
+    "@react-types/button" "3.10.1"
+    "@react-types/overlays" "3.8.11"
+    "@react-types/select" "3.9.8"
+    "@react-types/shared" "3.26.0"
+
+"@heroui/use-callback-ref@2.1.2":
+  version "2.1.2"
+  resolved "https://registry.npmjs.org/@heroui/use-callback-ref/-/use-callback-ref-2.1.2.tgz"
+  integrity sha512-wPD0L8vK+FHDvsVGZYCJeEm/WwMJvE6qvcZhzo4n2+318FrsfAPI2N1VQKx176/ZHNl8j7Z44o+eZlI5KwSpeQ==
+  dependencies:
+    "@heroui/use-safe-layout-effect" "2.1.2"
+
+"@heroui/use-data-scroll-overflow@2.2.3":
+  version "2.2.3"
+  resolved "https://registry.npmjs.org/@heroui/use-data-scroll-overflow/-/use-data-scroll-overflow-2.2.3.tgz"
+  integrity sha512-G80ZYiKAK6YOlQHbGkjI5iOvm3jBOSAJElpL5/VBto33hRtw0LlvJWiVu0s0nWOaxaAgX0ug/kAihZmq7uRYRA==
+  dependencies:
+    "@heroui/shared-utils" "2.1.3"
+
+"@heroui/use-disclosure@2.2.3":
+  version "2.2.3"
+  resolved "https://registry.npmjs.org/@heroui/use-disclosure/-/use-disclosure-2.2.3.tgz"
+  integrity sha512-AkoHyEZ+txfeHFtnXCDyC+MY05AjzBLXBF7yVO/bvg7VgGxyVzK+z800OwvgwmN6nQbjVmfQpcVJ44UFfzB1Bw==
+  dependencies:
+    "@heroui/use-callback-ref" "2.1.2"
+    "@react-aria/utils" "3.26.0"
+    "@react-stately/utils" "3.10.5"
+
+"@heroui/use-draggable@2.1.3":
+  version "2.1.3"
+  resolved "https://registry.npmjs.org/@heroui/use-draggable/-/use-draggable-2.1.3.tgz"
+  integrity sha512-2PT8jUGsmbY6CF0QYb06f3T7OCwZe5uXuwpEKx0A0p/TdrzdAzSPtRda9mwU23zSQLByp7bwr7A8Zg0bQqTY/g==
+  dependencies:
+    "@react-aria/interactions" "3.22.5"
+
+"@heroui/use-image@2.1.3":
+  version "2.1.3"
+  resolved "https://registry.npmjs.org/@heroui/use-image/-/use-image-2.1.3.tgz"
+  integrity sha512-d0jqI0Ttz/d68E5O2PHPSQJMftCpkwT+LECJz/7aZIZQqX8KJJA5WymDTDANTtASCO45wm6j8dxhRgRwaRVoTw==
+  dependencies:
+    "@heroui/react-utils" "2.1.4"
+    "@heroui/use-safe-layout-effect" "2.1.2"
+
+"@heroui/use-is-mobile@2.2.3":
+  version "2.2.3"
+  resolved "https://registry.npmjs.org/@heroui/use-is-mobile/-/use-is-mobile-2.2.3.tgz"
+  integrity sha512-O0zV+w2FTjJJP7qCBW5A3qkjvjQwMBkesD3ZOvpn71PR6GDDDFpLt0cr2hkaUd6qpb9rmeEUeJoVSch2QFNPrg==
+  dependencies:
+    "@react-aria/ssr" "3.9.7"
 
 "@heroui/use-measure@2.1.2":
   version "2.1.2"
@@ -500,6 +771,18 @@
     "@react-types/shared" "^3.26.0"
     "@swc/helpers" "^0.5.0"
 
+"@react-aria/dialog@3.5.20":
+  version "3.5.20"
+  resolved "https://registry.npmjs.org/@react-aria/dialog/-/dialog-3.5.20.tgz"
+  integrity sha512-l0GZVLgeOd3kL3Yj8xQW7wN3gn9WW3RLd/SGI9t7ciTq+I/FhftjXCWzXLlOCCTLMf+gv7eazecECtmoWUaZWQ==
+  dependencies:
+    "@react-aria/focus" "^3.19.0"
+    "@react-aria/overlays" "^3.24.0"
+    "@react-aria/utils" "^3.26.0"
+    "@react-types/dialog" "^3.5.14"
+    "@react-types/shared" "^3.26.0"
+    "@swc/helpers" "^0.5.0"
+
 "@react-aria/focus@^3.19.0", "@react-aria/focus@3.19.0":
   version "3.19.0"
   resolved "https://registry.npmjs.org/@react-aria/focus/-/focus-3.19.0.tgz"
@@ -522,7 +805,29 @@
     "@swc/helpers" "^0.5.0"
     clsx "^2.0.0"
 
-"@react-aria/i18n@^3.12.4":
+"@react-aria/form@^3.0.11":
+  version "3.0.12"
+  resolved "https://registry.npmjs.org/@react-aria/form/-/form-3.0.12.tgz"
+  integrity sha512-8uvPYEd3GDyGt5NRJIzdWW1Ry5HLZq37vzRZKUW8alZ2upFMH3KJJG55L9GP59KiF6zBrYBebvI/YK1Ye1PE1g==
+  dependencies:
+    "@react-aria/interactions" "^3.23.0"
+    "@react-aria/utils" "^3.27.0"
+    "@react-stately/form" "^3.1.1"
+    "@react-types/shared" "^3.27.0"
+    "@swc/helpers" "^0.5.0"
+
+"@react-aria/form@3.0.11":
+  version "3.0.11"
+  resolved "https://registry.npmjs.org/@react-aria/form/-/form-3.0.11.tgz"
+  integrity sha512-oXzjTiwVuuWjZ8muU0hp3BrDH5qjVctLOF50mjPvqUbvXQTHhoDxWweyIXPQjGshaqBd2w4pWaE4A2rG2O/apw==
+  dependencies:
+    "@react-aria/interactions" "^3.22.5"
+    "@react-aria/utils" "^3.26.0"
+    "@react-stately/form" "^3.1.0"
+    "@react-types/shared" "^3.26.0"
+    "@swc/helpers" "^0.5.0"
+
+"@react-aria/i18n@^3.12.4", "@react-aria/i18n@^3.12.5":
   version "3.12.5"
   resolved "https://registry.npmjs.org/@react-aria/i18n/-/i18n-3.12.5.tgz"
   integrity sha512-ooeop2pTG94PuaHoN2OTk2hpkqVuoqgEYxRvnc1t7DVAtsskfhS/gVOTqyWGsxvwAvRi7m/CnDu6FYdeQ/bK5w==
@@ -570,7 +875,51 @@
     "@react-types/shared" "^3.26.0"
     "@swc/helpers" "^0.5.0"
 
-"@react-aria/overlays@3.24.0":
+"@react-aria/label@^3.7.13", "@react-aria/label@3.7.13":
+  version "3.7.13"
+  resolved "https://registry.npmjs.org/@react-aria/label/-/label-3.7.13.tgz"
+  integrity sha512-brSAXZVTey5RG/Ex6mTrV/9IhGSQFU4Al34qmjEDho+Z2qT4oPwf8k7TRXWWqzOU0ugYxekYbsLd2zlN3XvWcg==
+  dependencies:
+    "@react-aria/utils" "^3.26.0"
+    "@react-types/shared" "^3.26.0"
+    "@swc/helpers" "^0.5.0"
+
+"@react-aria/listbox@3.13.6":
+  version "3.13.6"
+  resolved "https://registry.npmjs.org/@react-aria/listbox/-/listbox-3.13.6.tgz"
+  integrity sha512-6hEXEXIZVau9lgBZ4VVjFR3JnGU+fJaPmV3HP0UZ2ucUptfG0MZo24cn+ZQJsWiuaCfNFv5b8qribiv+BcO+Kg==
+  dependencies:
+    "@react-aria/interactions" "^3.22.5"
+    "@react-aria/label" "^3.7.13"
+    "@react-aria/selection" "^3.21.0"
+    "@react-aria/utils" "^3.26.0"
+    "@react-stately/collections" "^3.12.0"
+    "@react-stately/list" "^3.11.1"
+    "@react-types/listbox" "^3.5.3"
+    "@react-types/shared" "^3.26.0"
+    "@swc/helpers" "^0.5.0"
+
+"@react-aria/menu@3.16.0":
+  version "3.16.0"
+  resolved "https://registry.npmjs.org/@react-aria/menu/-/menu-3.16.0.tgz"
+  integrity sha512-TNk+Vd3TbpBPUxEloAdHRTaRxf9JBK7YmkHYiq0Yj5Lc22KS0E2eTyhpPM9xJvEWN2TlC5TEvNfdyui2kYWFFQ==
+  dependencies:
+    "@react-aria/focus" "^3.19.0"
+    "@react-aria/i18n" "^3.12.4"
+    "@react-aria/interactions" "^3.22.5"
+    "@react-aria/overlays" "^3.24.0"
+    "@react-aria/selection" "^3.21.0"
+    "@react-aria/utils" "^3.26.0"
+    "@react-stately/collections" "^3.12.0"
+    "@react-stately/menu" "^3.9.0"
+    "@react-stately/selection" "^3.18.0"
+    "@react-stately/tree" "^3.8.6"
+    "@react-types/button" "^3.10.1"
+    "@react-types/menu" "^3.9.13"
+    "@react-types/shared" "^3.26.0"
+    "@swc/helpers" "^0.5.0"
+
+"@react-aria/overlays@^3.24.0", "@react-aria/overlays@3.24.0":
   version "3.24.0"
   resolved "https://registry.npmjs.org/@react-aria/overlays/-/overlays-3.24.0.tgz"
   integrity sha512-0kAXBsMNTc/a3M07tK9Cdt/ea8CxTAEJ223g8YgqImlmoBBYAL7dl5G01IOj67TM64uWPTmZrOklBchHWgEm3A==
@@ -587,6 +936,19 @@
     "@react-types/shared" "^3.26.0"
     "@swc/helpers" "^0.5.0"
 
+"@react-aria/selection@^3.21.0":
+  version "3.22.0"
+  resolved "https://registry.npmjs.org/@react-aria/selection/-/selection-3.22.0.tgz"
+  integrity sha512-XFOrK525HX2eeWeLZcZscUAs5qsuC1ZxsInDXMjvLeAaUPtQNEhUKHj3psDAl6XDU4VV1IJo0qCmFTVqTTMZSg==
+  dependencies:
+    "@react-aria/focus" "^3.19.1"
+    "@react-aria/i18n" "^3.12.5"
+    "@react-aria/interactions" "^3.23.0"
+    "@react-aria/utils" "^3.27.0"
+    "@react-stately/selection" "^3.19.0"
+    "@react-types/shared" "^3.27.0"
+    "@swc/helpers" "^0.5.0"
+
 "@react-aria/selection@3.21.0":
   version "3.21.0"
   resolved "https://registry.npmjs.org/@react-aria/selection/-/selection-3.21.0.tgz"
@@ -600,7 +962,7 @@
     "@react-types/shared" "^3.26.0"
     "@swc/helpers" "^0.5.0"
 
-"@react-aria/ssr@^3.9.7":
+"@react-aria/ssr@^3.9.7", "@react-aria/ssr@3.9.7":
   version "3.9.7"
   resolved "https://registry.npmjs.org/@react-aria/ssr/-/ssr-3.9.7.tgz"
   integrity sha512-GQygZaGlmYjmYM+tiNBA5C6acmiDWF52Nqd40bBp0Znk4M4hP+LTmI0lpI1BuKMw45T8RIhrAsICIfKwZvi2Gg==
@@ -616,6 +978,21 @@
     "@react-stately/toggle" "^3.8.0"
     "@react-types/shared" "^3.26.0"
     "@react-types/switch" "^3.5.7"
+    "@swc/helpers" "^0.5.0"
+
+"@react-aria/textfield@3.15.0":
+  version "3.15.0"
+  resolved "https://registry.npmjs.org/@react-aria/textfield/-/textfield-3.15.0.tgz"
+  integrity sha512-V5mg7y1OR6WXYHdhhm4FC7QyGc9TideVRDFij1SdOJrIo5IFB7lvwpOS0GmgwkVbtr71PTRMjZnNbrJUFU6VNA==
+  dependencies:
+    "@react-aria/focus" "^3.19.0"
+    "@react-aria/form" "^3.0.11"
+    "@react-aria/label" "^3.7.13"
+    "@react-aria/utils" "^3.26.0"
+    "@react-stately/form" "^3.1.0"
+    "@react-stately/utils" "^3.10.5"
+    "@react-types/shared" "^3.26.0"
+    "@react-types/textfield" "^3.10.0"
     "@swc/helpers" "^0.5.0"
 
 "@react-aria/toggle@^3.10.10":
@@ -640,6 +1017,19 @@
     "@react-aria/i18n" "^3.12.4"
     "@react-aria/utils" "^3.26.0"
     "@react-types/shared" "^3.26.0"
+    "@swc/helpers" "^0.5.0"
+
+"@react-aria/tooltip@3.7.10":
+  version "3.7.10"
+  resolved "https://registry.npmjs.org/@react-aria/tooltip/-/tooltip-3.7.10.tgz"
+  integrity sha512-Udi3XOnrF/SYIz72jw9bgB74MG/yCOzF5pozHj2FH2HiJlchYv/b6rHByV/77IZemdlkmL/uugrv/7raPLSlnw==
+  dependencies:
+    "@react-aria/focus" "^3.19.0"
+    "@react-aria/interactions" "^3.22.5"
+    "@react-aria/utils" "^3.26.0"
+    "@react-stately/tooltip" "^3.5.0"
+    "@react-types/shared" "^3.26.0"
+    "@react-types/tooltip" "^3.4.13"
     "@swc/helpers" "^0.5.0"
 
 "@react-aria/utils@^3.26.0", "@react-aria/utils@^3.27.0":
@@ -700,6 +1090,43 @@
     "@react-types/shared" "^3.27.0"
     "@swc/helpers" "^0.5.0"
 
+"@react-stately/form@^3.1.0", "@react-stately/form@3.1.0":
+  version "3.1.0"
+  resolved "https://registry.npmjs.org/@react-stately/form/-/form-3.1.0.tgz"
+  integrity sha512-E2wxNQ0QaTyDHD0nJFtTSnEH9A3bpJurwxhS4vgcUmESHgjFEMLlC9irUSZKgvOgb42GAq+fHoWBsgKeTp9Big==
+  dependencies:
+    "@react-types/shared" "^3.26.0"
+    "@swc/helpers" "^0.5.0"
+
+"@react-stately/form@^3.1.1":
+  version "3.1.1"
+  resolved "https://registry.npmjs.org/@react-stately/form/-/form-3.1.1.tgz"
+  integrity sha512-qavrz5X5Mdf/Q1v/QJRxc0F8UTNEyRCNSM1we/nnF7GV64+aYSDLOtaRGmzq+09RSwo1c8ZYnIkK5CnwsPhTsQ==
+  dependencies:
+    "@react-types/shared" "^3.27.0"
+    "@swc/helpers" "^0.5.0"
+
+"@react-stately/list@^3.11.1", "@react-stately/list@3.11.1":
+  version "3.11.1"
+  resolved "https://registry.npmjs.org/@react-stately/list/-/list-3.11.1.tgz"
+  integrity sha512-UCOpIvqBOjwLtk7zVTYWuKU1m1Oe61Q5lNar/GwHaV1nAiSQ8/yYlhr40NkBEs9X3plEfsV28UIpzOrYnu1tPg==
+  dependencies:
+    "@react-stately/collections" "^3.12.0"
+    "@react-stately/selection" "^3.18.0"
+    "@react-stately/utils" "^3.10.5"
+    "@react-types/shared" "^3.26.0"
+    "@swc/helpers" "^0.5.0"
+
+"@react-stately/menu@^3.9.0", "@react-stately/menu@3.9.0":
+  version "3.9.0"
+  resolved "https://registry.npmjs.org/@react-stately/menu/-/menu-3.9.0.tgz"
+  integrity sha512-++sm0fzZeUs9GvtRbj5RwrP+KL9KPANp9f4SvtI3s+MP+Y/X3X7LNNePeeccGeyikB5fzMsuyvd82bRRW9IhDQ==
+  dependencies:
+    "@react-stately/overlays" "^3.6.12"
+    "@react-types/menu" "^3.9.13"
+    "@react-types/shared" "^3.26.0"
+    "@swc/helpers" "^0.5.0"
+
 "@react-stately/overlays@^3.6.12":
   version "3.6.13"
   resolved "https://registry.npmjs.org/@react-stately/overlays/-/overlays-3.6.13.tgz"
@@ -718,7 +1145,7 @@
     "@react-types/overlays" "^3.8.11"
     "@swc/helpers" "^0.5.0"
 
-"@react-stately/selection@^3.18.0":
+"@react-stately/selection@^3.18.0", "@react-stately/selection@^3.19.0":
   version "3.19.0"
   resolved "https://registry.npmjs.org/@react-stately/selection/-/selection-3.19.0.tgz"
   integrity sha512-AvbUqnWjqVQC48RD39S9BpMKMLl55Zo5l/yx5JQFPl55cFwe9Tpku1KY0wzt3fXXiXWaqjDn/7Gkg1VJYy8esQ==
@@ -748,7 +1175,16 @@
     "@react-types/shared" "^3.26.0"
     "@swc/helpers" "^0.5.0"
 
-"@react-stately/tree@3.8.6":
+"@react-stately/tooltip@^3.5.0", "@react-stately/tooltip@3.5.0":
+  version "3.5.0"
+  resolved "https://registry.npmjs.org/@react-stately/tooltip/-/tooltip-3.5.0.tgz"
+  integrity sha512-+xzPNztJDd2XJD0X3DgWKlrgOhMqZpSzsIssXeJgO7uCnP8/Z513ESaipJhJCFC8fxj5caO/DK4Uu8hEtlB8cQ==
+  dependencies:
+    "@react-stately/overlays" "^3.6.12"
+    "@react-types/tooltip" "^3.4.13"
+    "@swc/helpers" "^0.5.0"
+
+"@react-stately/tree@^3.8.6", "@react-stately/tree@3.8.6":
   version "3.8.6"
   resolved "https://registry.npmjs.org/@react-stately/tree/-/tree-3.8.6.tgz"
   integrity sha512-lblUaxf1uAuIz5jm6PYtcJ+rXNNVkqyFWTIMx6g6gW/mYvm8GNx1G/0MLZE7E6CuDGaO9dkLSY2bB1uqyKHidA==
@@ -773,14 +1209,7 @@
   dependencies:
     "@react-types/shared" "^3.26.0"
 
-"@react-types/button@^3.10.1":
-  version "3.10.2"
-  resolved "https://registry.npmjs.org/@react-types/button/-/button-3.10.2.tgz"
-  integrity sha512-h8SB/BLoCgoBulCpyzaoZ+miKXrolK9XC48+n1dKJXT8g4gImrficurDW6+PRTQWaRai0Q0A6bu8UibZOU4syg==
-  dependencies:
-    "@react-types/shared" "^3.27.0"
-
-"@react-types/button@3.10.1":
+"@react-types/button@^3.10.1", "@react-types/button@3.10.1":
   version "3.10.1"
   resolved "https://registry.npmjs.org/@react-types/button/-/button-3.10.1.tgz"
   integrity sha512-XTtap8o04+4QjPNAshFWOOAusUTxQlBjU2ai0BTVLShQEjHhRVDBIWsI2B2FKJ4KXT6AZ25llaxhNrreWGonmA==
@@ -812,6 +1241,36 @@
     "@react-types/overlays" "^3.8.11"
     "@react-types/shared" "^3.26.0"
 
+"@react-types/dialog@^3.5.14":
+  version "3.5.15"
+  resolved "https://registry.npmjs.org/@react-types/dialog/-/dialog-3.5.15.tgz"
+  integrity sha512-BX1+mV35Oa0aIlhu98OzJaSB7uiCWDPQbr0AkpFBajSSlESUoAjntN+4N+QJmj24z2v6UE9zxGQ85/U/0Le+bw==
+  dependencies:
+    "@react-types/overlays" "^3.8.12"
+    "@react-types/shared" "^3.27.0"
+
+"@react-types/form@3.7.8":
+  version "3.7.8"
+  resolved "https://registry.npmjs.org/@react-types/form/-/form-3.7.8.tgz"
+  integrity sha512-0wOS97/X0ijTVuIqik1lHYTZnk13QkvMTKvIEhM7c6YMU3vPiirBwLbT2kJiAdwLiymwcCkrBdDF1NTRG6kPFA==
+  dependencies:
+    "@react-types/shared" "^3.26.0"
+
+"@react-types/listbox@^3.5.3":
+  version "3.5.4"
+  resolved "https://registry.npmjs.org/@react-types/listbox/-/listbox-3.5.4.tgz"
+  integrity sha512-5otTes0zOwRZwNtqysPD/aW4qFJSxd5znjwoWTLnzDXXOBHXPyR83IJf8ITgvIE5C0y+EFadsWR/BBO3k9Pj7g==
+  dependencies:
+    "@react-types/shared" "^3.27.0"
+
+"@react-types/menu@^3.9.13", "@react-types/menu@3.9.13":
+  version "3.9.13"
+  resolved "https://registry.npmjs.org/@react-types/menu/-/menu-3.9.13.tgz"
+  integrity sha512-7SuX6E2tDsqQ+HQdSvIda1ji/+ujmR86dtS9CUu5yWX91P25ufRjZ72EvLRqClWNQsj1Xl4+2zBDLWlceznAjw==
+  dependencies:
+    "@react-types/overlays" "^3.8.11"
+    "@react-types/shared" "^3.26.0"
+
 "@react-types/overlays@^3.8.11", "@react-types/overlays@^3.8.12":
   version "3.8.12"
   resolved "https://registry.npmjs.org/@react-types/overlays/-/overlays-3.8.12.tgz"
@@ -823,6 +1282,13 @@
   version "3.8.11"
   resolved "https://registry.npmjs.org/@react-types/overlays/-/overlays-3.8.11.tgz"
   integrity sha512-aw7T0rwVI3EuyG5AOaEIk8j7dZJQ9m34XAztXJVZ/W2+4pDDkLDbJ/EAPnuo2xGYRGhowuNDn4tDju01eHYi+w==
+  dependencies:
+    "@react-types/shared" "^3.26.0"
+
+"@react-types/select@3.9.8":
+  version "3.9.8"
+  resolved "https://registry.npmjs.org/@react-types/select/-/select-3.9.8.tgz"
+  integrity sha512-RGsYj2oFjXpLnfcvWMBQnkcDuKkwT43xwYWZGI214/gp/B64tJiIUgTM5wFTRAeGDX23EePkhCQF+9ctnqFd6g==
   dependencies:
     "@react-types/shared" "^3.26.0"
 
@@ -842,6 +1308,21 @@
   integrity sha512-sL7jmh8llF8BxzY4HXkSU4bwU8YU6gx45P85D0AdYXgRHxU9Cp7BQPOMF4pJoQ8TTej05MymY5q7xvJVmxUTAQ==
   dependencies:
     "@react-types/shared" "^3.27.0"
+
+"@react-types/textfield@^3.10.0", "@react-types/textfield@3.10.0":
+  version "3.10.0"
+  resolved "https://registry.npmjs.org/@react-types/textfield/-/textfield-3.10.0.tgz"
+  integrity sha512-ShU3d6kLJGQjPXccVFjM3KOXdj3uyhYROqH9YgSIEVxgA9W6LRflvk/IVBamD9pJYTPbwmVzuP0wQkTDupfZ1w==
+  dependencies:
+    "@react-types/shared" "^3.26.0"
+
+"@react-types/tooltip@^3.4.13", "@react-types/tooltip@3.4.13":
+  version "3.4.13"
+  resolved "https://registry.npmjs.org/@react-types/tooltip/-/tooltip-3.4.13.tgz"
+  integrity sha512-KPekFC17RTT8kZlk7ZYubueZnfsGTDOpLw7itzolKOXGddTXsrJGBzSB4Bb060PBVllaDO0MOrhPap8OmrIl1Q==
+  dependencies:
+    "@react-types/overlays" "^3.8.11"
+    "@react-types/shared" "^3.26.0"
 
 "@rtsao/scc@^1.1.0":
   version "1.1.0"
@@ -872,6 +1353,18 @@
   dependencies:
     "@swc/counter" "^0.1.3"
     tslib "^2.4.0"
+
+"@tanstack/react-virtual@3.11.2":
+  version "3.11.2"
+  resolved "https://registry.npmjs.org/@tanstack/react-virtual/-/react-virtual-3.11.2.tgz"
+  integrity sha512-OuFzMXPF4+xZgx8UzJha0AieuMihhhaWG0tCqpp6tDzlFwOmNBPYMuLOtMJ1Tr4pXLHmgjcWhG6RlknY2oNTdQ==
+  dependencies:
+    "@tanstack/virtual-core" "3.11.2"
+
+"@tanstack/virtual-core@3.11.2":
+  version "3.11.2"
+  resolved "https://registry.npmjs.org/@tanstack/virtual-core/-/virtual-core-3.11.2.tgz"
+  integrity sha512-vTtpNt7mKCiZ1pwU9hfKPhpdVO2sVzFQsxoVBGtOSHxlrRRzYr8iQ2TlwbAcRYCcEiZ9ECAM8kBzH0v2+VzfKw==
 
 "@types/json5@^0.0.29":
   version "0.0.29"
@@ -3088,7 +3581,7 @@ queue-microtask@^1.2.2:
   resolved "https://registry.npmjs.org/queue-microtask/-/queue-microtask-1.2.3.tgz"
   integrity sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==
 
-"react-dom@^16.8 || ^17 || ^18 || ^19 || ^19.0.0-rc", "react-dom@^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0-rc.1", "react-dom@^17.0.2 || ^18 || ^19", react-dom@^18, "react-dom@^18.0.0 || ^19.0.0", react-dom@^18.2.0, "react-dom@>=18 || >=19.0.0-rc.0":
+"react-dom@^16.8 || ^17 || ^18 || ^19 || ^19.0.0-rc", "react-dom@^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0", "react-dom@^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0-rc.1", "react-dom@^17.0.2 || ^18 || ^19", react-dom@^18, "react-dom@^18.0.0 || ^19.0.0", react-dom@^18.2.0, react-dom@>=18, "react-dom@>=18 || >=19.0.0-rc.0":
   version "18.3.1"
   resolved "https://registry.npmjs.org/react-dom/-/react-dom-18.3.1.tgz"
   integrity sha512-5m4nQKp+rZRb09LNH59GM4BxTh9251/ylbKIbpe7TpGxfJ+9kv6BLkLBXIjjspbgbnIBNqlI23tRnTWT0snUIw==
@@ -3101,7 +3594,16 @@ react-is@^16.13.1:
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-"react@^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0", "react@^16.8 || ^17 || ^18 || ^19 || ^19.0.0-rc", "react@^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0-rc.1", "react@^17.0.2 || ^18 || ^19", react@^18, "react@^18.0.0 || ^19.0.0", react@^18.2.0, react@^18.3.1, "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@>=18 || >=19.0.0-rc.0":
+react-textarea-autosize@^8.5.3:
+  version "8.5.7"
+  resolved "https://registry.npmjs.org/react-textarea-autosize/-/react-textarea-autosize-8.5.7.tgz"
+  integrity sha512-2MqJ3p0Jh69yt9ktFIaZmORHXw4c4bxSIhCeWiFwmJ9EYKgLmuNII3e9c9b2UO+ijl4StnpZdqpxNIhTdHvqtQ==
+  dependencies:
+    "@babel/runtime" "^7.20.13"
+    use-composed-ref "^1.3.0"
+    use-latest "^1.2.1"
+
+"react@^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0", "react@^16.8 || ^17 || ^18 || ^19 || ^19.0.0-rc", "react@^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0", "react@^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0-rc.1", "react@^17.0.2 || ^18 || ^19", react@^18, "react@^18.0.0 || ^19.0.0", react@^18.2.0, react@^18.3.1, "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", react@>=18, "react@>=18 || >=19.0.0-rc.0":
   version "18.3.1"
   resolved "https://registry.npmjs.org/react/-/react-18.3.1.tgz"
   integrity sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==
@@ -3712,6 +4214,23 @@ uri-js@^4.2.2:
   integrity sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==
   dependencies:
     punycode "^2.1.0"
+
+use-composed-ref@^1.3.0:
+  version "1.4.0"
+  resolved "https://registry.npmjs.org/use-composed-ref/-/use-composed-ref-1.4.0.tgz"
+  integrity sha512-djviaxuOOh7wkj0paeO1Q/4wMZ8Zrnag5H6yBvzN7AKKe8beOaED9SF5/ByLqsku8NP4zQqsvM2u3ew/tJK8/w==
+
+use-isomorphic-layout-effect@^1.1.1:
+  version "1.2.0"
+  resolved "https://registry.npmjs.org/use-isomorphic-layout-effect/-/use-isomorphic-layout-effect-1.2.0.tgz"
+  integrity sha512-q6ayo8DWoPZT0VdG4u3D3uxcgONP3Mevx2i2b0434cwWBoL+aelL1DzkXI6w3PhTZzUeR2kaVlZn70iCiseP6w==
+
+use-latest@^1.2.1:
+  version "1.3.0"
+  resolved "https://registry.npmjs.org/use-latest/-/use-latest-1.3.0.tgz"
+  integrity sha512-mhg3xdm9NaM8q+gLT8KryJPnRFOz1/5XPBhmDEVZK1webPzDjrPk7f/mbpeLqTgB9msytYWANxgALOCJKnLvcQ==
+  dependencies:
+    use-isomorphic-layout-effect "^1.1.1"
 
 util-deprecate@^1.0.2:
   version "1.0.2"

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { AdminLayout } from "./layout/adminLayout";
 
 export const metadata: Metadata = {
   title: "Admin Sidebar | Apollo Gears",
@@ -11,9 +12,8 @@ export default function AdminDashboardLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div>
-      Admin Sidebar
-      {children}
-    </div>
+    <>
+      <AdminLayout>{children}</AdminLayout>
+    </>
   );
 }
